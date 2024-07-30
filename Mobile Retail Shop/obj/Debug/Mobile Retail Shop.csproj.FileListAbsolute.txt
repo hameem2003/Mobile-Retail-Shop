@@ -1,0 +1,14 @@
+E:\Mobile Retail Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.csproj.AssemblyReference.cache
+E:\Mobile Retail Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Form1.resources
+E:\Mobile Retail Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Properties.Resources.resources
+E:\Mobile Retail Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.csproj.GenerateResource.cache
+E:\Mobile Retail Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.csproj.CoreCompileInputs.cache
+E:\Mobile Retail Shop\Mobile Retail Shop\bin\Debug\Mobile Retail Shop.mdf
+E:\Mobile Retail Shop\Mobile Retail Shop\bin\Debug\Mobile Retail Shop_log.ldf
+E:\Mobile Retail Shop\Mobile Retail Shop\bin\Debug\Mobile Retail Shop.exe.config
+E:\Mobile Retail Shop\Mobile Retail Shop\bin\Debug\Mobile Retail Shop.exe
+E:\Mobile Retail Shop\Mobile Retail Shop\bin\Debug\Mobile Retail Shop.pdb
+E:\Mobile Retail Shop\Mobile Retail Shop\bin\Debug\Guna.UI2.dll
+E:\Mobile Retail Shop\Mobile Retail Shop\obj\Debug\Mobile R.95BF2F3F.Up2Date
+E:\Mobile Retail Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.exe
+E:\Mobile Retail Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.pdb
