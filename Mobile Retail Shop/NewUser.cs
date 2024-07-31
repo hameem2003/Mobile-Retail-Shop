@@ -26,10 +26,10 @@ namespace Mobile_Retail_Shop
 
         private void submit_btn_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(name_tb.Text))
+            if (string.IsNullOrWhiteSpace(label54210.Text))
             {
                 MessageBox.Show("Fill up the name");
-                name_tb.Focus();
+                label54210.Focus();
                 return;
             }
 
@@ -119,7 +119,7 @@ namespace Mobile_Retail_Shop
 
             // Here register the information as a new account
             query = $@"INSERT INTO [User Information] (Name, Email, [Phone Number], City, Password, [User Type])
-                              VALUES('{name_tb.Text}', '{email_tb.Text}', '{phone_number_tb.Text}', '{city_tb.Text}', '{password_tb.Text}', {this.userType})";
+                              VALUES('{label54210.Text}', '{email_tb.Text}', '{phone_number_tb.Text}', '{city_tb.Text}', '{password_tb.Text}', {this.userType})";
 
             dataTable = dataBase.DataAccess(query, out error);
 

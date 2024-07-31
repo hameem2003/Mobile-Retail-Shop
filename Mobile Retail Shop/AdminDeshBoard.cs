@@ -47,6 +47,37 @@ namespace Mobile_Retail_Shop
 
         }
 
+        private void HidePanel()
+        {
+            if (admin_panel.Visible == true)
+                admin_panel.Visible = false;
+            
+
+            if (show_owner_panel.Visible == true)
+                show_owner_panel.Visible = false;
+
+            
+
+            if (shop_panel.Visible == true)
+                shop_panel.Visible = false;
+           
+        }
+
+
+        private void ShowSubManu(Panel subManu)
+        {
+            if (subManu.Visible == false)
+            {
+                HidePanel();
+                subManu.Visible = true;
+            }
+
+            else
+            {
+                subManu.Visible = false;
+            }
+        }
+
         private void new_admin_btn_Click(object sender, EventArgs e)
         {
             Instance.panelContainer.Controls.Clear();
@@ -76,6 +107,21 @@ namespace Mobile_Retail_Shop
         private void customer_btn_Click(object sender, EventArgs e)
         {
              
+        }
+
+        private void admin_btn_Click(object sender, EventArgs e)
+        {
+            ShowSubManu(admin_panel);
+        }
+
+        private void shop_owner_info_btn_Click(object sender, EventArgs e)
+        {
+            ShowSubManu(show_owner_panel);
+        }
+
+        private void shop_btn_Click(object sender, EventArgs e)
+        {
+            ShowSubManu(shop_panel);
         }
     }
     

@@ -50,9 +50,9 @@ namespace Mobile_Retail_Shop
             // So, user requst is not valid for next 
             if (dataTable.Rows.Count <= 0)
             {
-                MessageBox.Show ( "Invalid email or password");
+                MessageBox.Show("Invalid email or password");
                 return;
-            
+
             }
             if (dataTable.Rows[0]["User Type"].ToString() == "1")
             {
@@ -60,6 +60,14 @@ namespace Mobile_Retail_Shop
                 this.Hide();
                 adminDeshBoard.Show();
 
+            }
+
+
+            if (dataTable.Rows[0]["User Type"].ToString() == "2")
+            {
+                ShopOwner shopOwner = new ShopOwner(dataTable.Rows[0]["ID"].ToString());
+                this.Hide();
+                shopOwner.Show();
             }
         }
     }

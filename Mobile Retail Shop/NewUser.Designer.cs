@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.name_tb = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label54210 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.name_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.email_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -46,33 +46,33 @@
             this.password_toggle_btn = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
+            // label54210
+            // 
+            this.label54210.BackColor = System.Drawing.Color.Transparent;
+            this.label54210.Location = new System.Drawing.Point(41, 57);
+            this.label54210.Name = "label54210";
+            this.label54210.Size = new System.Drawing.Size(31, 15);
+            this.label54210.TabIndex = 0;
+            this.label54210.Text = "Name";
+            // 
             // name_tb
             // 
-            this.name_tb.BackColor = System.Drawing.Color.Transparent;
-            this.name_tb.Location = new System.Drawing.Point(41, 57);
+            this.name_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.name_tb.DefaultText = "";
+            this.name_tb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.name_tb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.name_tb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.name_tb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.name_tb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.name_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.name_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.name_tb.Location = new System.Drawing.Point(41, 79);
             this.name_tb.Name = "name_tb";
-            this.name_tb.Size = new System.Drawing.Size(31, 15);
-            this.name_tb.TabIndex = 0;
-            this.name_tb.Text = "Name";
-            // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(41, 79);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(271, 36);
-            this.guna2TextBox1.TabIndex = 1;
+            this.name_tb.PasswordChar = '\0';
+            this.name_tb.PlaceholderText = "";
+            this.name_tb.SelectedText = "";
+            this.name_tb.Size = new System.Drawing.Size(271, 36);
+            this.name_tb.TabIndex = 1;
             // 
             // guna2HtmlLabel1
             // 
@@ -277,10 +277,11 @@
             this.password_toggle_btn.TabIndex = 2;
             this.password_toggle_btn.Click += new System.EventHandler(this.password_toggle_btn_Click);
             // 
-            // New_Admin
+            // NewUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.Controls.Add(this.confirm_toggle_btn);
             this.Controls.Add(this.password_toggle_btn);
             this.Controls.Add(this.submit_btn);
@@ -295,9 +296,9 @@
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.email_tb);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.name_tb);
-            this.Name = "New_Admin";
+            this.Controls.Add(this.label54210);
+            this.Name = "NewUser";
             this.Size = new System.Drawing.Size(385, 589);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -306,8 +307,8 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2HtmlLabel name_tb;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel label54210;
+        private Guna.UI2.WinForms.Guna2TextBox name_tb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2TextBox email_tb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
