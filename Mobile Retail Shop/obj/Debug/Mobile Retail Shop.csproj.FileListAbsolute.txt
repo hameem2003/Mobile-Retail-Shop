@@ -12,3 +12,18 @@ E:\Mobile Retail Shop\Mobile Retail Shop\bin\Debug\Guna.UI2.dll
 E:\Mobile Retail Shop\Mobile Retail Shop\obj\Debug\Mobile R.95BF2F3F.Up2Date
 E:\Mobile Retail Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.exe
 E:\Mobile Retail Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.pdb
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\bin\Debug\Mobile Retail Shop.exe.config
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\bin\Debug\Mobile Retail Shop.exe
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\bin\Debug\Mobile Retail Shop.pdb
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\bin\Debug\Guna.UI2.dll
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.csproj.AssemblyReference.cache
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.AdminDeshBoard.resources
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Form1.resources
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.NewShop.resources
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.NewUser.resources
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Properties.Resources.resources
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.csproj.GenerateResource.cache
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.csproj.CoreCompileInputs.cache
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile R.95BF2F3F.Up2Date
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.exe
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.pdb
