@@ -104,11 +104,6 @@ namespace Mobile_Retail_Shop
             Instance.panelContainer.Controls.Add(newShop);
         }
 
-        private void customer_btn_Click(object sender, EventArgs e)
-        {
-             
-        }
-
         private void admin_btn_Click(object sender, EventArgs e)
         {
             ShowSubManu(admin_panel);
@@ -140,16 +135,25 @@ namespace Mobile_Retail_Shop
             Instance.panelContainer.Controls.Add(user);
         }
 
-        private void all_shop_btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void logout_btn_Click(object sender, EventArgs e)
         {
             Login login = new Login();
             this.Hide();
             login.Show();
+        }
+
+        private void all_shop_btn_Click(object sender, EventArgs e)
+        {
+            Instance.panelContainer.Controls.Clear();
+            Shops shops = new Shops();
+            shops.Dock = DockStyle.Fill;
+            Instance.panelContainer.Controls.Add(shops);
+        }
+
+
+        private void customer_btn_Click(object sender, EventArgs e)
+        {
+
         }
     }
     

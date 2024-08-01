@@ -45,5 +45,7 @@ namespace Mobile_Retail_Shop
                 ShopOwner.Instance.panelContainer.Controls.Add(allProduct);
             }
         }
+
+
     }
 }
