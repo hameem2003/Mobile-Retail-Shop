@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.new_product_btn = new Guna.UI2.WinForms.Guna2Button();
             this.all_product_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.new_product_btn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,6 +43,21 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(543, 92);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // all_product_btn
+            // 
+            this.all_product_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.all_product_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.all_product_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.all_product_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.all_product_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.all_product_btn.ForeColor = System.Drawing.Color.White;
+            this.all_product_btn.Location = new System.Drawing.Point(301, 27);
+            this.all_product_btn.Name = "all_product_btn";
+            this.all_product_btn.Size = new System.Drawing.Size(99, 45);
+            this.all_product_btn.TabIndex = 0;
+            this.all_product_btn.Text = "All Product";
+            this.all_product_btn.Click += new System.EventHandler(this.all_product_btn_Click);
             // 
             // new_product_btn
             // 
@@ -58,20 +73,6 @@
             this.new_product_btn.TabIndex = 0;
             this.new_product_btn.Text = "New Product";
             this.new_product_btn.Click += new System.EventHandler(this.new_product_btn_Click);
-            // 
-            // all_product_btn
-            // 
-            this.all_product_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.all_product_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.all_product_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.all_product_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.all_product_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.all_product_btn.ForeColor = System.Drawing.Color.White;
-            this.all_product_btn.Location = new System.Drawing.Point(301, 27);
-            this.all_product_btn.Name = "all_product_btn";
-            this.all_product_btn.Size = new System.Drawing.Size(99, 45);
-            this.all_product_btn.TabIndex = 0;
-            this.all_product_btn.Text = "All Product";
             // 
             // Shop
             // 

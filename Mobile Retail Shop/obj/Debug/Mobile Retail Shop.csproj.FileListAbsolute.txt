@@ -18,7 +18,6 @@ D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\bin\Debug\Mobile Reta
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\bin\Debug\Guna.UI2.dll
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.csproj.AssemblyReference.cache
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.AdminDeshBoard.resources
-D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Form1.resources
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.NewShop.resources
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.NewUser.resources
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Properties.Resources.resources
@@ -30,3 +29,9 @@ D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Reta
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Product.resources
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Shop.resources
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.ShopOwner.resources
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.AllProduct.resources
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Payment.resources
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.ProductInformation.resources
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.User.resources
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Users.resources
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Login.resources

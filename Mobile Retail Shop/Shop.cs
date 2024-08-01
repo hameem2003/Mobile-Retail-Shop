@@ -25,13 +25,24 @@ namespace Mobile_Retail_Shop
 
         private void new_product_btn_Click(object sender, EventArgs e)
         {
-            if(ShopOwner.Instance.panelContainer.Controls.ContainsKey("Product"))
+            if (!ShopOwner.Instance.panelContainer.Controls.ContainsKey("Product"))
             {
                 ShopOwner.Instance.panelContainer.Controls.Clear();
                 Product addNewProduct = new Product(newProduct: true);
                 addNewProduct.Dock = DockStyle.Fill;
                 ShopOwner.Instance.panelContainer.Controls.Add(addNewProduct);
 
+            }
+        }
+
+        private void all_product_btn_Click(object sender, EventArgs e)
+        {
+            if (!ShopOwner.Instance.panelContainer.Controls.ContainsKey("AllProduct"))
+            {
+                ShopOwner.Instance.panelContainer.Controls.Clear();
+                AllProduct allProduct = new AllProduct(this.shopID);
+                allProduct.Dock = DockStyle.Fill;
+                ShopOwner.Instance.panelContainer.Controls.Add(allProduct);
             }
         }
     }

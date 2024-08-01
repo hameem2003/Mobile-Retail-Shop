@@ -56,6 +56,7 @@
             this.Controls.Add(this.data_panel);
             this.Controls.Add(this.left_panel);
             this.Name = "ShopOwner";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ShopOwner";
             this.Load += new System.EventHandler(this.ShopOwner_Load);
             this.ResumeLayout(false);

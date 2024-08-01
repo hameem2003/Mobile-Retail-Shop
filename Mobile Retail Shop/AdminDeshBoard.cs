@@ -123,6 +123,34 @@ namespace Mobile_Retail_Shop
         {
             ShowSubManu(shop_panel);
         }
+
+        private void admin_information_btn_Click(object sender, EventArgs e)
+        {
+            Instance.panelContainer.Controls.Clear();
+            Users user = new Users(1);
+            user.Dock = DockStyle.Fill;
+            Instance.panelContainer.Controls.Add(user);
+        }
+
+        private void all_owner_info_btn_Click(object sender, EventArgs e)
+        {
+            Instance.panelContainer.Controls.Clear();
+            Users user = new Users(2);
+            user.Dock = DockStyle.Fill;
+            Instance.panelContainer.Controls.Add(user);
+        }
+
+        private void all_shop_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logout_btn_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            this.Hide();
+            login.Show();
+        }
     }
     
 }

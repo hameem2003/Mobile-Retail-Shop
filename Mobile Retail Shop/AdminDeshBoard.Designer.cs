@@ -43,6 +43,7 @@
             this.new_admin_btn = new Guna.UI2.WinForms.Guna2Button();
             this.admin_btn = new Guna.UI2.WinForms.Guna2Button();
             this.data_panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.logout_btn = new Guna.UI2.WinForms.Guna2Button();
             this.left_panel.SuspendLayout();
             this.shop_panel.SuspendLayout();
             this.show_owner_panel.SuspendLayout();
@@ -51,6 +52,7 @@
             // 
             // left_panel
             // 
+            this.left_panel.Controls.Add(this.logout_btn);
             this.left_panel.Controls.Add(this.customer_btn);
             this.left_panel.Controls.Add(this.shop_panel);
             this.left_panel.Controls.Add(this.shop_btn);
@@ -106,6 +108,7 @@
             this.all_shop_btn.Size = new System.Drawing.Size(155, 33);
             this.all_shop_btn.TabIndex = 2;
             this.all_shop_btn.Text = "Shops";
+            this.all_shop_btn.Click += new System.EventHandler(this.all_shop_btn_Click);
             // 
             // new_shop_btn
             // 
@@ -166,6 +169,7 @@
             this.all_owner_info_btn.Size = new System.Drawing.Size(155, 33);
             this.all_owner_info_btn.TabIndex = 1;
             this.all_owner_info_btn.Text = "All Owner";
+            this.all_owner_info_btn.Click += new System.EventHandler(this.all_owner_info_btn_Click);
             // 
             // new_owner_btn
             // 
@@ -228,6 +232,7 @@
             this.admin_information_btn.Size = new System.Drawing.Size(155, 30);
             this.admin_information_btn.TabIndex = 1;
             this.admin_information_btn.Text = "All Admin";
+            this.admin_information_btn.Click += new System.EventHandler(this.admin_information_btn_Click);
             // 
             // new_admin_btn
             // 
@@ -275,6 +280,24 @@
             this.data_panel.Size = new System.Drawing.Size(421, 511);
             this.data_panel.TabIndex = 1;
             // 
+            // logout_btn
+            // 
+            this.logout_btn.CustomBorderColor = System.Drawing.Color.Black;
+            this.logout_btn.CustomBorderThickness = new System.Windows.Forms.Padding(2);
+            this.logout_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.logout_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.logout_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.logout_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.logout_btn.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.logout_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.logout_btn.ForeColor = System.Drawing.Color.White;
+            this.logout_btn.Location = new System.Drawing.Point(0, 481);
+            this.logout_btn.Name = "logout_btn";
+            this.logout_btn.Size = new System.Drawing.Size(155, 30);
+            this.logout_btn.TabIndex = 7;
+            this.logout_btn.Text = "Log Out";
+            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
+            // 
             // AdminDeshBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -283,6 +306,7 @@
             this.Controls.Add(this.data_panel);
             this.Controls.Add(this.left_panel);
             this.Name = "AdminDeshBoard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminDeshBoard";
             this.Load += new System.EventHandler(this.AdminDeshBoard_Load);
             this.left_panel.ResumeLayout(false);
@@ -310,5 +334,6 @@
         private Guna.UI2.WinForms.Guna2Button all_owner_info_btn;
         private Guna.UI2.WinForms.Guna2Panel data_panel;
         private Guna.UI2.WinForms.Guna2Button customer_btn;
+        private Guna.UI2.WinForms.Guna2Button logout_btn;
     }
 }

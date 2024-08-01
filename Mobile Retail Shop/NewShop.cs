@@ -1,14 +1,7 @@
 ﻿using Guna.UI2.WinForms;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Mobile_Retail_Shop
 {
@@ -20,11 +13,10 @@ namespace Mobile_Retail_Shop
             LoadShopOwner();
         }
 
-
         private void LoadShopOwner()
         {
-            string error, query = "SELECT ID, Name FROM [User Information] WHERE [User Type] = 2";
-
+            string error;
+            string query = "SELECT ID, Name FROM [User Information] WHERE [User Type] = 2";
 
             DataBase dataBase = new DataBase();
             DataTable dataTable = dataBase.DataAccess(query, out error);
@@ -35,20 +27,28 @@ namespace Mobile_Retail_Shop
                 return;
             }
 
-            if (dataTable.Rows.Count > 0)
+            if (dataTable.Rows.Count == 0)
             {
-                owner_cb.DisplayMember = "No Owner";
-                submit_btn.Enabled = false;
+                owner_cb.Items.Add(new ComboBoxItem { Text = "No Owner", Value = null });
+                submit_btn.Enabled = false; // Disable button if no owner
                 return;
             }
 
             foreach (DataRow row in dataTable.Rows)
             {
-                owner_cb.Text = row["Name"].ToString();
-                owner_cb.Tag = row["ID"];
+                // Create a new ComboBox item with the name
+                var item = new ComboBoxItem
+                {
+                    Text = row["Name"].ToString(),
+                    Value = row["ID"]
+                };
+                // Add the item to the ComboBox
+                owner_cb.Items.Add(item);
             }
 
-            owner_cb.DisplayMember = "Select Owner";
+            // Set the display member to show the text
+            owner_cb.DisplayMember = "Text";
+            owner_cb.ValueMember = "Value";
         }
 
         private void submit_btn_Click(object sender, EventArgs e)
@@ -67,14 +67,12 @@ namespace Mobile_Retail_Shop
                 return;
             }
 
-
             if (string.IsNullOrWhiteSpace(phone_number_tb.Text))
             {
-                MessageBox.Show("Fill up the phone Numvber");
+                MessageBox.Show("Fill up the phone number");
                 phone_number_tb.Focus();
                 return;
             }
-
 
             if (string.IsNullOrWhiteSpace(city_tb.Text))
             {
@@ -83,35 +81,40 @@ namespace Mobile_Retail_Shop
                 return;
             }
 
-            if (owner_cb.DisplayMember == "No Owner")
+            if (owner_cb.SelectedItem == null || owner_cb.SelectedItem is ComboBoxItem selectedItem && selectedItem.Value == null)
             {
-                MessageBox.Show("First you resister a owner");
+                MessageBox.Show("Select a valid owner");
                 return;
             }
 
-            if (owner_cb.Text == "Select Owner")
+            // Get the selected owner ID
+            int ownerId = (int)((ComboBoxItem)owner_cb.SelectedItem).Value;
+
+            string error;
+            string query = $@"INSERT INTO [Shop Information] (Name, Email, [Phone Number], City, [User ID])
+                              VALUES ('{name_tb.Text}', '{email_tb.Text}', '{phone_number_tb.Text}', '{city_tb.Text}', {ownerId})";
+
+            DataBase dataBase = new DataBase();
+            DataTable dataTable = dataBase.DataAccess(query, out error);
+
+            if (!string.IsNullOrEmpty(error))
             {
-                MessageBox.Show("Select a owner");
-                return ;
+                MessageBox.Show($"Class name: NewShop Function: submit_btn_Click \nError: {error}");
+                return;
             }
 
-            if (owner_cb.SelectedItem is Guna2CheckBox selectedItem)
-            {
-                int ownerId = (int)selectedItem.Tag;
+            MessageBox.Show("Shop information inserted successfully.");
+        }
+    }
 
-                string error, query = $@"INSERT INTO [Shop Information] (Name, Email, [Phone Number], City, [User ID])
-                              VALUES('{name_tb.Text}', '{email_tb.Text}', '{phone_number_tb.Text}', '{city_tb.Text}', {ownerId})";
+    public class ComboBoxItem
+    {
+        public string Text { get; set; }
+        public object Value { get; set; }
 
-                DataBase dataBase = new DataBase();
-                DataTable dataTable = dataBase.DataAccess(query, out error);
-
-
-                if (!dataTable.Rows.Contains(error))
-                {
-                    MessageBox.Show($"Class name: NewShop Function: LoadShopOwner \nError: {error}");
-                    return;
-                }
-            }
+        public override string ToString()
+        {
+            return Text; // This is what will be shown in the ComboBox
         }
     }
 }
