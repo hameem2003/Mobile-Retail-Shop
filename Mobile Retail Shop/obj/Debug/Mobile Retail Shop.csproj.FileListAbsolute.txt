@@ -35,3 +35,28 @@ D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Reta
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.User.resources
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Users.resources
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Login.resources
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.csproj.AssemblyReference.cache
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.AdminDeshBoard.resources
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.AllProduct.resources
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Login.resources
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.NewShop.resources
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.NewUser.resources
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Payment.resources
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Product.resources
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.ProductInformation.resources
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Properties.Resources.resources
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Shop.resources
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.ShopOwner.resources
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.User.resources
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Users.resources
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.csproj.GenerateResource.cache
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.csproj.CoreCompileInputs.cache
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.exe
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.pdb
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\bin\Debug\Mobile Retail Shop.exe.config
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\bin\Debug\Mobile Retail Shop.exe
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\bin\Debug\Mobile Retail Shop.pdb
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\bin\Debug\Guna.UI2.dll
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile R.95BF2F3F.Up2Date
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\bin\Debug\Mobile Retail Shop.mdf
+C:\Users\immus\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\bin\Debug\Mobile Retail Shop_log.ldf
