@@ -47,6 +47,37 @@ namespace Mobile_Retail_Shop
 
         }
 
+        private void HidePanel()
+        {
+            if (admin_panel.Visible == true)
+                admin_panel.Visible = false;
+            
+
+            if (show_owner_panel.Visible == true)
+                show_owner_panel.Visible = false;
+
+            
+
+            if (shop_panel.Visible == true)
+                shop_panel.Visible = false;
+           
+        }
+
+
+        private void ShowSubManu(Panel subManu)
+        {
+            if (subManu.Visible == false)
+            {
+                HidePanel();
+                subManu.Visible = true;
+            }
+
+            else
+            {
+                subManu.Visible = false;
+            }
+        }
+
         private void new_admin_btn_Click(object sender, EventArgs e)
         {
             Instance.panelContainer.Controls.Clear();
@@ -73,9 +104,56 @@ namespace Mobile_Retail_Shop
             Instance.panelContainer.Controls.Add(newShop);
         }
 
+        private void admin_btn_Click(object sender, EventArgs e)
+        {
+            ShowSubManu(admin_panel);
+        }
+
+        private void shop_owner_info_btn_Click(object sender, EventArgs e)
+        {
+            ShowSubManu(show_owner_panel);
+        }
+
+        private void shop_btn_Click(object sender, EventArgs e)
+        {
+            ShowSubManu(shop_panel);
+        }
+
+        private void admin_information_btn_Click(object sender, EventArgs e)
+        {
+            Instance.panelContainer.Controls.Clear();
+            Users user = new Users(1);
+            user.Dock = DockStyle.Fill;
+            Instance.panelContainer.Controls.Add(user);
+        }
+
+        private void all_owner_info_btn_Click(object sender, EventArgs e)
+        {
+            Instance.panelContainer.Controls.Clear();
+            Users user = new Users(2);
+            user.Dock = DockStyle.Fill;
+            Instance.panelContainer.Controls.Add(user);
+        }
+
+        private void logout_btn_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            this.Hide();
+            login.Show();
+        }
+
+        private void all_shop_btn_Click(object sender, EventArgs e)
+        {
+            Instance.panelContainer.Controls.Clear();
+            Shops shops = new Shops();
+            shops.Dock = DockStyle.Fill;
+            Instance.panelContainer.Controls.Add(shops);
+        }
+
+
         private void customer_btn_Click(object sender, EventArgs e)
         {
-             
+
         }
     }
     

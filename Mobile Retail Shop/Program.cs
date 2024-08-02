@@ -16,7 +16,7 @@ namespace Mobile_Retail_Shop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminDeshBoard());
+            Application.Run(new Login());
         }
     }
 }
